@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список самых известных парков атракционов</title>
+</head>
+<body>
+    <h2><a href="page1.html">Самые известные парки аттракционов</a></h2>
+    <a href="page3.html">Список самых известных парков аттракционов</a>
+    <hr>
+    
+    <details>
+        <summary>График</summary>
+        Значение по оси ОХ
+        <form>
+            <p>
+                <input type="radio" name="ox" value="country"> Страна <br>
+                <input type="radio" name="ox" value="type"> Тип парка <br>
+                <input type="radio" name="ox" value="year"> Год открытия
+            </p>
+        </form>
+        Результат
+        <form>
+            <input type="checkbox" name="oy" value="0"> Количество посетителей <br>
+            <input type="checkbox" name="oy" value="1"> Количество аттракционов <br>
+        </form>
+        <input type="button" value="Построить">
+    </details>
+
+    <details>
+        <summary>Фильтр</summary>
+        <form>
+            Название: <input type="text" id="name">
+        </form><br>
+        <form>
+            Страна: <input type="text" id="country">
+        </form><br>
+        <form>
+            Город: <input type="text" id="city">
+        </form><br>
+        <form>
+            Год открытия: от <input type="text" id="year1"> до <input type="text" id="year2">
+        </form><br>
+        <form>
+            Тип парка: <input type="text" id="type">
+        </form><br>
+        <form>
+            Посетители (в год): от <input type="text" id="visitors1"> до <input type="text" id="visitors2">
+        </form><br>
+        <form>
+            Количество аттракционов: от <input type="text" id="attractions1"> до <input type="text" id="attractions2">
+        </form><br>
+        <input type="button" value="Найти">
+    </details>
+
+    <details>
+        <summary>Сортировка</summary>
+        <form>
+            Первый уровень: 
+            <select name="first">
+                <option value="0" selected>Нет</option>
+                <option value="1">Название</option>
+                <option value="2">Страна</option>
+                <option value="3">Город</option>
+                <option value="4">Год открытия</option>
+                <option value="5">Тип парка</option>
+                <option value="6">Посетители</option>
+                <option value="7">Количество аттракционов</option>
+            </select> 
+            по убыванию? <input type="checkbox" value="0">
+        </form><br>
+        <form>
+            Второй уровень: 
+            <select name="second">
+                <option value="0" selected>Нет</option>
+                <option value="1">Название</option>
+                <option value="2">Страна</option>
+                <option value="3">Город</option>
+                <option value="4">Год открытия</option>
+                <option value="5">Тип парка</option>
+                <option value="6">Посетители</option>
+                <option value="7">Количество аттракционов</option>
+            </select> 
+            по убыванию? <input type="checkbox" value="0">
+        </form><br>
+        <form>
+            Третий уровень: 
+            <select name="third">
+                <option value="0" selected>Нет</option>
+                <option value="1">Название</option>
+                <option value="2">Страна</option>
+                <option value="3">Город</option>
+                <option value="4">Год открытия</option>
+                <option value="5">Тип парка</option>
+                <option value="6">Посетители</option>
+                <option value="7">Количество аттракционов</option>
+            </select> 
+            по убыванию? <input type="checkbox" value="0">
+        </form><br>
+        <input type="button" value="Сортировать">
+    </details>
+
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Страна</th>
+                <th>Город</th>
+                <th>Год открытия</th>
+                <th>Тип парка</th>
+                <th>Посетители (в год)</th>
+                <th>Количество аттракционов</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Диснейленд</td><td>США</td><td>Анахайм</td><td>1955</td><td>Тематический</td><td>18700000</td><td>85</td></tr>
+            <tr><td>Волшебное Королевство</td><td>США</td><td>Орландо</td><td>1971</td><td>Тематический</td><td>20800000</td><td>42</td></tr>
+            <tr><td>Токио Диснейленд</td><td>Япония</td><td>Ураясу</td><td>1983</td><td>Тематический</td><td>17900000</td><td>47</td></tr>
+            <tr><td>Токио ДиснейСи</td><td>Япония</td><td>Ураясу</td><td>2001</td><td>Тематический</td><td>14700000</td><td>28</td></tr>
+            <tr><td>Диснейленд Париж</td><td>Франция</td><td>Париж</td><td>1992</td><td>Тематический</td><td>9700000</td><td>52</td></tr>
+            <tr><td>Юниверсал Студиос Япония</td><td>Япония</td><td>Осака</td><td>2001</td><td>Тематический</td><td>14300000</td><td>38</td></tr>
+            <tr><td>Юниверсал Остров Приключений</td><td>США</td><td>Орландо</td><td>1999</td><td>Тематический</td><td>10600000</td><td>25</td></tr>
+            <tr><td>Эфтелинг</td><td>Нидерланды</td><td>Катсхёвел</td><td>1952</td><td>Тематический</td><td>5300000</td><td>36</td></tr>
+            <tr><td>Европа-Парк</td><td>Германия</td><td>Руст</td><td>1975</td><td>Тематический</td><td>5700000</td><td>62</td></tr>
+            <tr><td>Си-Уорлд Орландо</td><td>США</td><td>Орландо</td><td>1973</td><td>Морской парк</td><td>4600000</td><td>18</td></tr>
+            <tr><td>Леголенд Биллунд</td><td>Дания</td><td>Биллунд</td><td>1968</td><td>Тематический</td><td>2200000</td><td>41</td></tr>
+            <tr><td>Порт Авентура</td><td>Испания</td><td>Салоу</td><td>1995</td><td>Тематический</td><td>3500000</td><td>39</td></tr>
+            <tr><td>Гардаленд</td><td>Италия</td><td>Кастельнуво-дель-Гарда</td><td>1975</td><td>Тематический</td><td>2900000</td><td>33</td></tr>
+            <tr><td>Си-Уорлд Сан-Диего</td><td>США</td><td>Сан-Диего</td><td>1964</td><td>Морской парк</td><td>4200000</td><td>16</td></tr>
+            <tr><td>Буш Гарденс Тампа</td><td>США</td><td>Тампа</td><td>1959</td><td>Тематический</td><td>3800000</td><td>29</td></tr>
+            <tr><td>Кнаббельс</td><td>США</td><td>Элизабеттаун</td><td>1926</td><td>Парк развлечений</td><td>1500000</td><td>63</td></tr>
+            <tr><td>Сидар Пойнт</td><td>США</td><td>Сандаски</td><td>1870</td><td>Парк развлечений</td><td>3200000</td><td>71</td></tr>
+            <tr><td>Кингс Айленд</td><td>США</td><td>Мейсон</td><td>1972</td><td>Парк развлечений</td><td>3400000</td><td>48</td></tr>
+            <tr><td>Херши Парк</td><td>США</td><td>Херши</td><td>1907</td><td>Парк развлечений</td><td>3300000</td><td>76</td></tr>
+            <tr><td>Сикс Флэгс Мэджик Маунтин</td><td>США</td><td>Валенсия</td><td>1971</td><td>Парк развлечений</td><td>3100000</td><td>49</td></tr>
+            <tr><td>Сикс Флэгс Грейт Адвенчер</td><td>США</td><td>Джексон</td><td>1974</td><td>Парк развлечений</td><td>2900000</td><td>45</td></tr>
+            <tr><td>Долтон Парк</td><td>Великобритания</td><td>Честерфилд</td><td>1950</td><td>Парк развлечений</td><td>2800000</td><td>40</td></tr>
+            <tr><td>Альтон Тауэрс</td><td>Великобритания</td><td>Стаффордшир</td><td>1860</td><td>Тематический</td><td>2600000</td><td>38</td></tr>
+            <tr><td>Блэкпул Плежер Бич</td><td>Великобритания</td><td>Блэкпул</td><td>1896</td><td>Парк развлечений</td><td>5500000</td><td>67</td></tr>
+            <tr><td>Тиволи</td><td>Дания</td><td>Копенгаген</td><td>1843</td><td>Парк развлечений</td><td>4700000</td><td>31</td></tr>
+            <tr><td>Гронланд</td><td>Норвегия</td><td>Осло</td><td>2002</td><td>Торгово-развлекательный</td><td>2200000</td><td>25</td></tr>
+            <tr><td>Линнанмяки</td><td>Финляндия</td><td>Хельсинки</td><td>1950</td><td>Парк развлечений</td><td>1300000</td><td>43</td></tr>
+            <tr><td>Глобен Сити</td><td>Швеция</td><td>Стокгольм</td><td>1989</td><td>Торгово-развлекательный</td><td>1800000</td><td>22</td></tr>
+            <tr><td>Парк Астерикс</td><td>Франция</td><td>Пли</td><td>1989</td><td>Тематический</td><td>2300000</td><td>34</td></tr>
+            <tr><td>Футуроскоп</td><td>Франция</td><td>Пуатье</td><td>1987</td><td>Технологический</td><td>1800000</td><td>25</td></tr>
+            <tr><td>Валиби</td><td>Франция</td><td>Лис-Эпинар</td><td>1989</td><td>Водный парк</td><td>1100000</td><td>18</td></tr>
+            <tr><td>Эверленд</td><td>Южная Корея</td><td>Йонъин</td><td>1976</td><td>Тематический</td><td>6100000</td><td>45</td></tr>
+            <tr><td>Лотте Уорлд</td><td>Южная Корея</td><td>Сеул</td><td>1989</td><td>Тематический</td><td>7500000</td><td>41</td></tr>
+            <tr><td>Оушен Парк</td><td>Гонконг</td><td>Гонконг</td><td>1977</td><td>Морской парк</td><td>5800000</td><td>35</td></tr>
+            <tr><td>Хэппи Вэлли Шанхай</td><td>Китай</td><td>Шанхай</td><td>2009</td><td>Тематический</td><td>3400000</td><td>28</td></tr>
+            <tr><td>Чанлонг Пэрадайз</td><td>Китай</td><td>Гуанчжоу</td><td>2006</td><td>Тематический</td><td>3800000</td><td>70</td></tr>
+            <tr><td>Уорнер Бразерс Уорлд Абу-Даби</td><td>ОАЭ</td><td>Абу-Даби</td><td>2018</td><td>Тематический</td><td>1900000</td><td>29</td></tr>
+            <tr><td>Феррари Уорлд</td><td>ОАЭ</td><td>Абу-Даби</td><td>2010</td><td>Тематический</td><td>2100000</td><td>20</td></tr>
+            <tr><td>Аквавентура</td><td>ОАЭ</td><td>Дубай</td><td>2013</td><td>Водный парк</td><td>1200000</td><td>30</td></tr>
+            <tr><td>ДримУорлд</td><td>Таиланд</td><td>Паттая</td><td>1993</td><td>Тематический</td><td>1600000</td><td>25</td></tr>
+            <tr><td>Сиаме Парк</td><td>Испания</td><td>Коста-Адехе</td><td>1994</td><td>Водный парк</td><td>1000000</td><td>22</td></tr>
+            <tr><td>Акватик</td><td>Испания</td><td>Камбрильс</td><td>1983</td><td>Водный парк</td><td>900000</td><td>18</td></tr>
+            <tr><td>Ванна Ванна</td><td>Италия</td><td>Кастельнуово-Берарденга</td><td>2002</td><td>Водный парк</td><td>800000</td><td>15</td></tr>
+            <tr><td>Аквашок</td><td>Россия</td><td>Сочи</td><td>2014</td><td>Водный парк</td><td>700000</td><td>20</td></tr>
+            <tr><td>Сочи Парк</td><td>Россия</td><td>Сочи</td><td>2014</td><td>Тематический</td><td>1500000</td><td>21</td></tr>
+            <tr><td>Диво Остров</td><td>Россия</td><td>Санкт-Петербург</td><td>2003</td><td>Парк развлечений</td><td>1200000</td><td>25</td></tr>
+            <tr><td>Остров Мечты</td><td>Россия</td><td>Москва</td><td>2020</td><td>Тематический</td><td>2800000</td><td>27</td></tr>
+            <tr><td>Сказка</td><td>Россия</td><td>Москва</td><td>2015</td><td>Тематический</td><td>900000</td><td>15</td></tr>
+            <tr><td>Воробьевы горы</td><td>Россия</td><td>Москва</td><td>1954</td><td>Парк развлечений</td><td>600000</td><td>12</td></tr>
+        </tbody>
+    </table>
+
+    <hr>
+</body>
+</html>
